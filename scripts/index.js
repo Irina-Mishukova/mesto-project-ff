@@ -25,7 +25,7 @@ const placesListTemplate = document.querySelector('#card-template').content;
 initialCards.forEach(function(element){
     const initialCardsElement = placesListTemplate.cloneNode(true);
     initialCardsElement.querySelector('.card__title').textContent = element.name;
-    initialCardsElement.querySelector('.card__image').href = element.link;
+    initialCardsElement.querySelector('.card__image').src = element.link;
 
     placesList.append(initialCardsElement)
 });
