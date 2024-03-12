@@ -9,9 +9,9 @@
 // @todo: Вывести карточки на страницу
 
 
-const placesList = document.querySelector('.places__list');
+    const placesList = document.querySelector('.places__list');
 
-const cardTemplate = document.querySelector('#card-template').content;
+    const cardTemplate = document.querySelector('#card-template').content;
 
 initialCards.forEach(function(element){
     const cards = cardTemplate.cloneNode(true);
@@ -25,7 +25,6 @@ initialCards.forEach(function(element){
     });
 
     placesList.append(cards);
-    
 });
 
 function deleteCard(evt) {
